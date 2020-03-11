@@ -1,0 +1,14 @@
+<h1>LOGIN</h1>
+
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div><br>
+<% end %>
+
+<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
+  <input name=name>
+  <input type=submit value='login'>
+<% end %>
+
+</form>
